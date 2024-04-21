@@ -29,9 +29,16 @@
         }
 
     .left-aligned {
-    display: block;
     float: left; /* This will align the image to the left */
     margin-right: 50px; /* Adds space between the image and the following text/content */
+    }
+
+    .block-image {
+    display: block; /* Makes the image a block-level element */
+    float: left; /* This will align the image to the left */
+    margin: 0 auto; /* Optionally centers the image horizontally */
+    width: auto; /* Keeps the original width unless specified otherwise */
+    height: auto; /* Maintains aspect ratio */
     }
     
     a:link {
@@ -66,7 +73,7 @@
     
     <h2></h2>
     <p>We believe that it's way past time to remove all the waste carbon we've been putting into our atmosphere: </p>
-    <img src="./monthly_t.jpeg" alt="" style="max-width:500px;" class="left-aligned">
+    <img src="./monthly_t.jpeg" alt="" style="max-width:500px;" class="block-image">
 
         
     <h2>Our Mission</h2>
@@ -89,15 +96,17 @@
 
     <p>
         For inquiries, drop us a line:
-        <button onclick="document.getElementById('email').innerHTML = 'davidmding@gmail.com';">David</button>
+        <br>
+
+        <button style=“background-color: grey;border-color:white;color:white” onclick="document.getElementById('email').innerHTML = 'davidmding@gmail.com';">David</button>
         <span id="email"></span>
-        <button onclick="document.getElementById('email').innerHTML = 'drew@50y.com';">Drew</button>
+        <button style=“background-color: grey;border-color:white;color:white” onclick="document.getElementById('email').innerHTML = 'drew@50y.com';">Drew</button>
         <span id="email"></span>
         
     </p>
 
     <h2>Current Prototype</h2>
-    <img src="./dac_v01.png" alt="" style="max-width:500px;" class="left-aligned">
+    <img src="./dac_v01.png" alt="" style="max-width:500px;" class="block-image">
 
     
     <p>2024/04
